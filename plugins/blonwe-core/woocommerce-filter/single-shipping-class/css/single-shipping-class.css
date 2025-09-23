@@ -1,0 +1,32 @@
+.single-shipping-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #e5e8ec;
+    padding: 1.25rem;
+    margin-bottom: 15px;
+    border-radius: 6px;	
+}
+.single-shipping-message .info-message {
+    font-size: 0.8125rem;
+}
+.single-shipping-message i {
+    margin-right: 6px;
+}
+.single-shipping-message .info-message:after {
+    content: "|";
+    margin-left: 15px;
+    margin-right: 15px;
+    opacity: 0.3;
+}
+.single-shipping-message .info-message:last-child::after {
+  display: none;
+}
+@media (max-width: 600px) {
+    .single-shipping-message {
+        flex-direction: column;
+    }
+	.single-shipping-message .info-message:after {
+	  display: none;
+	}
+}
